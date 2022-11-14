@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <script src="https://kit.fontawesome.com/5c11fd58e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="content_info">
+                <!-- Left side of user info -->
+                <div class="profile">
+                    <form action="">
+                        <div class="profile_avatar">
+                            <div class="profile_avatar-item">
+                                <img src="/assets/img/IMG_4110.jpg" alt="">                           
+                            </div>
+                            <div class="profile_avatar-item">
+                                <label for="username"></label>
+                                <input type="text" name="username" id="username" placeholder="Luong Thao My">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="profile_content">
+                            <div class="profile_content-item">
+                                <label for="user_ID">Citizen ID:</label>
+                                <input type="text" name="userID" id="userID" placeholder="Citizen ID">
+                            </div>
+                            <div class="profile_content-item">
+                                <label for="user_address">Address:</label>
+                                <input type="text" name="user_address" id="user_address" placeholder="Address">
+                            </div>
+                            <div class="profile_content-item">
+                                <label for="user_phone">Phone:</label>
+                                <input type="text" name="user_phone" id="user_phone" placeholder="Phone">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="button_edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                </div>
+                <!-- Right side of user info  -->
+                <div class="health_condition_wrapper">
+                    <h2 class="text_heading">Health Condition</h2>
+                    <form action="">
+                        <div class="health_condition_main">
+                            <div class="user_info">
+                                <div class="user_info-item">
+                                    <label for="user_blood">Blood Group:</label>
+                                    <input type="text" name="user_blood" id="user_blood">
+                                </div>
+                                <div class="user_info-item">
+                                    <label for="user_height">Height:</label>
+                                    <input type="text" name="user_height" id="user_height">
+                                </div>
+                                <div class="user_info-item">
+                                    <label for="user_weight">Weight:</label>
+                                    <input type="text" name="user_weight" id="user_weight">
+                                </div>
+                                <div class="user_info-item">
+                                    <label for="user_DOB">Date of Birth:</label>
+                                    <input type="text" name="user_DOB" id="user_DOB">
+                                </div>
+                            </div>
+                            <div class="user_info__questions">
+                                <div class="user_info-item">
+                                    <label for="user_alcohol">Is addicted to alcohol:</label>
+                                    <input type="text" name="user_alcohol" id="user_alcohol">
+                                </div>
+                                <div class="user_info-item">
+                                    <label for="user_drug">Is addicted to drug:</label>
+                                    <input type="text" name="user_drug" id="user_drug">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="donation_his">
+                <div class="donation_his__header">
+                    <h2 class="text_heading">Donation History</h2>
+                    <button class="submit_button" id="donation_his__button">Donate</button>    
+                </div>
+                <div class="donation_his__table"> 
+                    <div class="donation_his__table-item">
+                        <table>
+                            <tr>
+                              <th>Time</th>
+                              <th>Blood Group</th>
+                              <th>Quantity</th>
+                              <th>Hospital</th>
+                              <th>Donated At</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="donation_his__table-button">
+                        <button class="submit_button">Load More</button>  
+                    </div>  
+                </div>
+                </div>    
+            </div>
+        <div class="booking_modal">
+            <div class="modal_background">
+                <div class="modal_content">
+                    <h2 class="text_heading">Booking Form</h2>
+                    <form action="">
+                        <div class="modal_content-item">
+                            <label for="booking_hospital">Hospital</label>
+                            <select name="hospital" id="booking_hospital" >
+                                <option value="">Select a hospital</option>
+                            </select>
+                        </div>
+                        <div class="modal_content-item">
+                            <label for="booking_date">Date</label>
+                            <input type="date" id="booking_date" name="date" placeholder="Select a Date">
+                        </div>
+                        <div class="modal_content-item">
+                            <label for="booking_quantity">Quantity</label>
+                            <input type="number" name="booking_quantity" id="booking_quantity" placeholder="Select donation quantity">
+                        </div>
+                        <button class="submit_button">Submit</button>
+                        <div class="button_edit">
+                            <i class="fa-solid fa-circle-xmark" id='close_button'></i>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script/user.js"></script>
+</body>
+</html>
+
