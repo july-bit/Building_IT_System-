@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Staff</title>
+</head>
+<body>
+    <div class="general_info">
+        <div class="general_info__hospital">
+            <section class="general_info__hospital_name">
+                Hospital Name
+            </section>
+            <section class="general_info__hospital_details">
+                <label for="edit_check" class="general_info__edit"><i class="fa-regular fa-pen-to-square"></i></label>
+                <p class="hospital_details"> <i class="fa-solid fa-phone"></i>&nbsp &nbsp 0909090909</p>
+                <p class="hospital_details"><i class="fa-solid fa-envelope"></i> &nbsp &nbspabc@gmail.com</p>
+                <p class="hospital_details"><i class="fa-solid fa-location-dot"></i> &nbsp &nbsp123 ACBV Go Vap, HCM</p>
+            </section>
+        </div>
+
+        <div class="general_info__blood">
+            <div class="general_info__blood__1">
+                <div class="blood_group" id="blood_a">
+                    <section class="blood_name">
+                        Blood A
+                    </section>
+                    <section class="blood_quantity">
+                        000
+                    </section>
+                </div>
+                <div class="blood_group" id="blood_b">
+                    <section class="blood_name">
+                        Blood B
+                    </section>
+                    <section class="blood_quantity">
+                        000
+                    </section>
+                </div>
+            </div>
+            <div class="general_info__blood__2">
+                <div class="blood_group" id="blood_o">
+                    <section class="blood_name">
+                        Blood O
+                    </section>
+                    <section class="blood_quantity">
+                        000
+                    </section>
+                </div>
+                <div class="blood_group" id="blood_ab">
+                    <section class="blood_name">
+                        Blood AB
+                    </section>
+                    <section class="blood_quantity">
+                        000
+                    </section>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" hidden id="edit_check">
+        <input type="checkbox" hidden id="request_button_check">
+        <div class="overlay"></div>
+        <div class="edit_form">
+            <form action="" method="" id="general_info__edit">
+                <!-- <div id="hospital__name"> -->
+                    <div class="label">
+                        <label for="hospital_name">Hospital name:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="hospital_name" name="hospital_name">
+                    </div>
+                <!-- </div> -->
+                <!-- <div id="hospital__phone"> -->
+                    <div class="label">
+                        <label for="hospital_phone">Phome number:</label>
+                    </div>
+                    <div class="input">
+                        <input type="phone" id="hospital_phone" name="hospital_phone">
+                    </div>
+                <!-- </div> -->
+                <!-- <div id="hospital__email"> -->
+                    <div class="label">
+                        <label for="hospital_email">Hospital email:</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="hospital_email" name="hospital_email">
+                    </div>
+                <!-- </div> -->
+                <!-- <div id="hospital__address"> -->
+                    <div class="label">
+                        <label for="hospital_address">Hospital addess:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="hospital_address" name="hospital_address">
+                    </div>
+                <!-- </div> -->
+                <br>
+                <button class="cancel_button">Cancel<label for="edit_check"></label></button>
+                <input type="submit" value="Change">
+            </form>
+        </div>
+    </div>
+
+    <div class="blood_info">
+        <section class="blood_info__nav">
+            <div class="nav_blood">Blood A</div>
+            <div class="nav_blood">Blood B</div>
+            <div class="nav_blood">Blood O</div>
+            <div class="nav_blood">Blood AB</div>
+            <label class="nav_blood request_button" for="request_button_check">REQUEST</label>
+        </section> 
+        <br><br><br><hr><br>
+        <section class="blood_info__details">
+            <table id="blood_table">
+                <tr>
+                    <th>Order</th>
+                    <th>Blood group</th> 
+                    <th>Quantity</th>
+                    <th>Storage</th>
+                    <th>Donator ID</th> 
+                    <th>Donator name</th>
+                    <th>Expiry date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>A</td> 
+                    <td>10</td>
+                    <td>01.04.06</td>
+                    <td>12345678</td> 
+                    <td>Nguyen Van A</td>
+                    <td>May, 10th 2021</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>A</td> 
+                    <td>10</td>
+                    <td>01.04.06</td>
+                    <td>12345678</td> 
+                    <td>Nguyen Van A</td>
+                    <td>May, 10th 2021</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>A</td> 
+                    <td>10</td>
+                    <td>01.04.06</td>
+                    <td>12345678</td> 
+                    <td>Nguyen Van A</td>
+                    <td>May, 10th 2021</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>A</td> 
+                    <td>10</td>
+                    <td>01.04.06</td>
+                    <td>12345678</td> 
+                    <td>Nguyen Van A</td>
+                    <td>May, 10th 2021</td>
+                    <td>Active</td>
+                </tr>
+                <tr>   
+                    <td id="button_row" colspan="8"><button class="load_more_button">Load more &nbsp;<i id="arrow_down" class="fa-regular fa-angle-down"></i></button></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+
+</body>
+</html>
