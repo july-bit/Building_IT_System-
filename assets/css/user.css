@@ -98,12 +98,14 @@ hr {
 .user_info-item label{ 
     color: #39395b; 
     font-weight: bold;
-    min-width: 120px;
+    min-width: 80px;
     padding:0 20px;
+    flex-grow:1;
 }
 .user_info-item input {
     width:20px;
     margin:0 20px;
+    height:20px;
 }
 .user_info__questions {
     align-items: flex-end;
@@ -147,14 +149,15 @@ hr {
     width: 15%; 
 }
 .booking_modal {
-    width: 40%; 
-    height: 40%; 
+    width: 100%; 
+    height: 100%; 
+
 }
 .modal_background {
     width:100%;
     height:100%;
-    background-color: rgba(0,0,0,0.7);
     position:absolute; 
+    background-color: rgba(0,0,0,0.7);
     top:0;
     display: flex;
     justify-content: center;
@@ -209,5 +212,26 @@ select,input::placeholder{
 }
 .donation_his__table-button button{
     margin-top:10px;
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 850px) {
+    .content_info {
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .profile {
+        width:100%;
+        margin-bottom: 25px;
+    }
+    .health_condition_wrapper {
+        margin-left: 0%;
+    }
+    .donation_his__table-button button{
+        width: 70%;
+        height:50px;
+    }
 
 }
