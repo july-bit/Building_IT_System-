@@ -1,0 +1,237 @@
+.main {
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 30px 30px; 
+    padding-right: 40px; 
+}
+.profile {
+    width: 26%; 
+    height: 20%; 
+    background-color: #ffffff;
+    flex-grow: 1; 
+    display: flex; 
+    position: relative; 
+    justify-content: center;
+    border-radius:10px;
+}
+.profile_avatar {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+}
+.profile_avatar-item img {
+    border-radius: 50%;
+    margin-top:20px; 
+    border:#39395b thin;
+
+}
+.profile_avatar-item input{
+    width:70%;
+    margin:0 20px;
+}
+.profile_avatar-item input::placeholder{
+    text-align: center;
+}
+.profile .button_edit {
+    position:absolute; 
+    right:10px;
+}
+.profile_content-item {
+    display:flex;
+    margin: 15px 5px; 
+    color: #39395b; 
+    font-weight: bold; 
+}
+.profile_content-item label {
+    min-width: 80px;
+}
+.profile_content-item input {
+    width:30px;
+    margin: 0 20px;
+}
+hr {
+    size: 90; 
+    opacity: 50%; 
+    position: absolute; 
+    right: 30px; 
+    left: 30px; 
+}
+.button_edit {
+    font-size: 10px;
+    position:absolute; 
+    right:10px;
+}
+.content_info{
+    display: flex;
+    justify-content: space-between;
+}
+.health_condition_wrapper {
+    flex-grow: 3;
+    margin-left: 2%; 
+    background-color: #ffffff;
+    padding: 20px 20px; 
+    border-radius:10px;
+
+}
+.text_heading {
+    font-size: 14px;
+
+}
+.health_condition_wrapper .text_heading {
+    color: #f1736c; 
+    font-weight: bolder;
+}
+.health_condition_main {
+    display: flex;
+    padding-top:20px;
+    justify-content: space-between;
+}
+
+.user_info-item { 
+    margin: 15px 5px; 
+    display: flex;
+    justify-content: space-around;
+}
+.user_info-item label{ 
+    color: #39395b; 
+    font-weight: bold;
+    min-width: 80px;
+    padding:0 20px;
+    flex-grow:1;
+}
+.user_info-item input {
+    width:20px;
+    margin:0 20px;
+    height:20px;
+}
+.user_info__questions {
+    align-items: flex-end;
+}
+.donation_his__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; 
+    margin-bottom: 5px; 
+}
+.submit_button {
+    background-color: #f1736c;
+    border-radius: 4px; 
+    border-style: none;
+    color: #ffffff; 
+    width: 120px; 
+    height: 35px; 
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+}
+.submit_button:hover{
+    background-color: #ffffff;
+    color: #f1736c; 
+    border:solid;
+    border-color:#f1736c;
+}
+.donation_his__table {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donation_his__table table{
+    border:1px solid; 
+    width:100%; 
+    border-collapse: collapse; 
+    color:#39395b; 
+}
+.donation_his__table .submit_button {
+    width: 15%; 
+}
+.booking_modal {
+    width: 100%; 
+    height: 100%; 
+
+}
+.modal_background {
+    width:100%;
+    height:100%;
+    position:absolute; 
+    background-color: rgba(0,0,0,0.7);
+    top:0;
+    display: flex;
+    justify-content: center;
+    display:none; 
+}
+.modal_content {
+    width:34%;
+    height:40%;
+    background-color: #ffffff;
+    margin:auto; 
+    padding: 0 32px; 
+    border-radius: 10px; 
+    position: relative; 
+}
+.modal_content .text_heading{
+    font-size: 16px; 
+    text-align: center;
+}
+.modal_content label,input,select { 
+    color: #39395b; 
+    font-weight: bold; 
+    min-width:40%; 
+    margin-top:5%; 
+}
+.modal_content button {
+    margin-top:10%;
+    width:100%;
+    height:40px;
+}
+.modal_content-item{
+    display: flex;
+}
+.modal_content input, select {
+    flex-grow:1;
+    width:85px;
+}
+.modal_content .button_edit {
+    position:absolute;
+    margin-top: 10px;
+    top:0;
+    font-size:15px;
+    zoom:1.6;
+    padding: 0 10px;
+
+}
+select,input::placeholder{
+    opacity:0.5;
+}
+.donation_his__table-button {
+    display: flex;
+    justify-content: center;
+}
+.donation_his__table-button button{
+    margin-top:10px;
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 850px) {
+    .content_info {
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .profile {
+        width:100%;
+        margin-bottom: 25px;
+    }
+    .health_condition_wrapper {
+        margin-left: 0%;
+    }
+    .donation_his__table-button button{
+        width: 70%;
+        height:50px;
+    }
+
+}
