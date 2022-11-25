@@ -3,7 +3,7 @@
     font-size: 17px;
     color:#313795;
     font-weight:bold;
-    height:850px;
+    height:100vh;
     /* background-color: red; */
 }
 .content {
@@ -28,27 +28,27 @@
     position:relative;
 }
 .content_description h1 {
-    font-size:40px;
+    font-size:50px;
 }
 .content_description hr {
     width:140px;
     position:absolute;
     left:0;
-    top:90px;
+    top:110px;
     border: 2px solid;
 }
 .content_description p {
     font-weight: lighter;
     opacity: 0.7;
-    font-size: 20px;
+    font-size: 30px;
 }
 .content_description button {
     border: 2px solid #ffffff;
     background-color: transparent;
-    width:60%;
+    width:75%;
     margin-top:30px;
-    height: 45px;
-    font-size: 25px;
+    height: 60px;
+    font-size: 30px;
     color: #ffffff;
     cursor: pointer;
     opacity: 0.7;
