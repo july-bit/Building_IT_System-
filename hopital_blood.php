@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css for main -->
     <link rel="stylesheet" href="assets/css/design.css">
+    <!-- css for header and footer -->
+    <link rel="stylesheet" href="assets/css/headernfooter.css">
+    <!-- css for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Staff</title>
+    <title>Blood Database</title>
 </head>
 <body>
+    <div id="header">
+        <?php 
+            require ('header.html');
+        ?>
+    </div>
+
     <main>
         <div class="general_info">
             <div class="general_info__hospital">
@@ -64,38 +74,38 @@
             <input type="checkbox" hidden id="edit_check">
             <label class="overlay" for="edit_check"></label>
             <!-- <div class="edit_form"> -->
-                <form action="" method="" id="general_info__edit_form">
+                <form action="" method="" id="general_info__edit_form" class="pop_up_form">
                     <div class="form_header">Edit form</div>
                     <div class="fields">
                         <!-- <div class="labels"> -->
-                            <label class="labels" for="hospital_name">Hospital name:</label>
+                            <label class="labels labels_edit" for="hospital_name">Hospital name:</label>
                         <!-- </div> -->
                         <!-- <div class="inputs"> -->
-                            <input class="inputs" type="text" id="hospital_name" name="hospital_name">
+                            <input class="inputs inputs_edit" type="text" id="hospital_name" name="hospital_name">
                         <!-- </div> -->
                     </div>
                     <div class="fields">
                         <!-- <div class="labels"> -->
-                            <label class="labels" for="hospital_phone">Phome number:</label>
+                            <label class="labels labels_edit" for="hospital_phone">Phome number:</label>
                         <!-- </div> -->
                         <!-- <div class="inputs"> -->
-                            <input class="inputs" type="phone" id="hospital_phone" name="hospital_phone">
+                            <input class="inputs inputs_edit" type="phone" id="hospital_phone" name="hospital_phone">
                         <!-- </div> -->
                     </div>
                     <div class="fields">
                         <!-- <div class="labels"> -->
-                            <label class="labels" for="hospital_email">Hospital email:</label>
+                            <label class="labels labels_edit" for="hospital_email">Hospital email:</label>
                         <!-- </div> -->
                         <!-- <div class="inputs"> -->
-                            <input class="inputs" type="email" id="hospital_email" name="hospital_email">
+                            <input class="inputs" inputs_edit type="email" id="hospital_email" name="hospital_email">
                         <!-- </div> -->
                     </div>
                     <div class="fields">
                         <!-- <div class="labels"> -->
-                            <label class="labels" for="hospital_address">Hospital addess:</label>
+                            <label class="labels labels_edit" for="hospital_address">Hospital addess:</label>
                         <!-- </div> -->
                         <!-- <div class="inputs"> -->
-                            <input class="inputs" type="text" id="hospital_address" name="hospital_address">
+                            <input class="inputs inputs_edit" type="text" id="hospital_address" name="hospital_address">
                         <!-- </div> -->
                     </div>
                     <br>
@@ -105,14 +115,14 @@
             <!-- </div> -->
         </div>
     
-        <div class="blood_info">
+        <div class="info_section" id="blood_info">
             <input type="checkbox" hidden id="request_button_check">
             <label class="overlay" for="request_button_check"></label>
-            <form action="" method="" id="request_form">
+            <form action="" method="" id="request_form" class="pop_up_form">
                 <div class="form_header">Request form</div>
                 <div class="fields">
                     <!-- <div class="labels"> -->
-                        <label class="labels" for="blood_group">Blood group:</label>
+                        <label class="labels blood_group_label" for="blood_group">Blood group:</label>
                     <!-- </div> -->
                     <!-- <div class="inputs"> -->
                         <select class="inputs" id="blood_group" name="blood_group">
@@ -152,16 +162,16 @@
                 <label class="close_button" for="request_button_check"><i class="fa-solid fa-xmark"></i></label>
                 <input type="submit" value="Request" class="submit_button">
             </form>
-            <section class="blood_info__nav">
-                <a href="" class="nav_blood">Blood A</a>
-                <a href="" class="nav_blood">Blood B</a>
-                <a href="" class="nav_blood">Blood O</a>
-                <a href="" class="nav_blood">Blood AB</a>
-                <label class="nav_blood request_button" for="request_button_check">REQUEST</label>
+            <section class="info_section__nav" id="blood_info__nav">
+                <a href="" class="nav_items nav_blood">Blood A</a>
+                <a href="" class="nav_items nav_blood">Blood B</a>
+                <a href="" class="nav_items nav_blood">Blood O</a>
+                <a href="" class="nav_items nav_blood">Blood AB</a>
+                <label class="nav_items open_form_button" id="request_button" for="request_button_check">REQUEST</label>
             </section> 
             <br><br><br><hr><br>
-            <section class="blood_info__details">
-                <table id="blood_table">
+            <section class="info_section__details" id="blood_info__details">
+                <table class="details_table" id="blood_table">
                     <thead>
                         <tr>
                             <th>Order</th>
@@ -225,5 +235,11 @@
             </section>
         </div>
     </main>
+
+    <div id="footer">
+        <?php 
+            require ('footer.html');
+        ?>
+    </div>
 </body>
 </html>
