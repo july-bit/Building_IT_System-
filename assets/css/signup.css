@@ -105,8 +105,6 @@
     flex-grow:1;
     margin-right: 80px;
     padding-right:20px;
-}
-.content-form_item input::placeholder {
     padding-left:30px;
 }
 .content-form_checkbox {
@@ -149,11 +147,13 @@
     border-radius: 4px; 
     border-style: none;
     color: #ffffff; 
-    width: 400px; 
-    height: 55px; 
+    max-width: 30rem; 
+    width:25rem;
+    height: 3.1rem; 
     transition-duration: 0.4s; 
     cursor: pointer; 
     border-radius: 5px;
+    text-align: center;
     /* margin-right:60px; */
 
 }
