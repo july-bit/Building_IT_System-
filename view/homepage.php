@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
+<header>
+    <?php include 'header.php';?>
+</header>
 <body>
     <div class="main">
         <div class="content">

@@ -103,7 +103,7 @@
                         </table>
                     </div>
                     <div class="donation_his__table-button">
-                        <input type="submit" class="submit_button">Load More</input>  
+                        <input type="submit" class="submit_button" value="Load More"></input>  
                     </div>  
                 </div>
                 </div>    
@@ -127,10 +127,36 @@
                             <label for="booking_quantity">Quantity</label>
                             <input type="number" name="booking_quantity" id="booking_quantity" placeholder="Select donation quantity">
                         </div>
-                        <input type="Submit" class="submit_button"></input>
+                        
+                        <input type="Submit" class="submit_button" value="Submit"></input>
                         <div class="button_edit">
                             <i class="fa-solid fa-xmark" id='close_button'></i>
                         </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="edit_modal">
+            <div class="edit_modal_background">
+                <div class="modal_content">
+                    <div class="text_heading">Edit Profile</div>
+                    <form action="">
+                        <div class="modal_content-item">
+                            <label for="edit_ID">Citizen ID:</label>
+                            <input type="text" id="edit_ID">
+                        </div>
+                        <div class="modal_content-item">
+                            <label for="edit_address">Address:</label>
+                            <input type="text" id="edit_address">
+                        </div>
+                        <div class="modal_content-item">
+                            <label for="edit_phone">Phone:</label>
+                            <input type="number" id="edit_phone">
+                        </div>
+                        <input type="Submit" class="submit_button"></input>
+                        <div class="button_edit">
+                            <i class="fa-solid fa-xmark" id='close_button'></i>
+                        </div>   
                     </form>
                 </div>
             </div>
