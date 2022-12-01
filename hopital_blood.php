@@ -71,10 +71,10 @@
                     </div>
                 </div>
             </div>
-            <input type="checkbox" hidden id="edit_check">
-            <label class="overlay" for="edit_check"></label>
             <!-- <div class="edit_form"> -->
-                <form action="" method="" id="general_info__edit_form" class="pop_up_form">
+                <input type="checkbox" hidden id="edit_check">
+                <label class="overlay" for="edit_check"></label>
+                <form action="" method=""  class="pop_up_form" id="general_info__edit_form">
                     <div class="form_header">Edit form</div>
                     <div class="fields">
                         <!-- <div class="labels"> -->
@@ -228,7 +228,7 @@
                     </tbody>
                     <tfoot>
                         <tr>   
-                            <td id="button_row" colspan="8"><button class="load_more_button">Load more &nbsp;<i id="arrow_down" class="fa-regular fa-angle-down"></i></button></td>
+                            <td id="button_row" colspan="8"><button class="load_more_button">Load more</button></td>
                         </tr>
                     </tfoot>
                 </table>

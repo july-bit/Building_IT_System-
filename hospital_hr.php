@@ -159,18 +159,22 @@
             </form>
 
             <section class="info_section__nav" id="staff_info__nav">
-                <a href="" class="nav_items nav_staff">All</a>
-                <a href="" class="nav_items nav_staff">Staff</a>
-                <a href="" class="nav_items nav_staff">Delivery Man</a>
-                <label class="nav_items open_form_button" id="add_staff_button" for="add_staff_button_check">ADD STAFF</label>
-                <label class="nav_items open_form_button" id="add_shipper_button" for="add_shipper_button_check">ADD DELIVERY MAN</label>
+                <div class="nav_items_left">
+                    <a href="" class="nav_items nav_staff">All</a>
+                    <a href="" class="nav_items nav_staff">Staff</a>
+                    <a href="" class="nav_items nav_staff">Delivery Man</a>
+                </div>
+                <div class="nav_items_right">
+                    <label class="nav_items open_form_button" id="add_staff_button" for="add_staff_button_check">ADD STAFF</label>
+                    <label class="nav_items open_form_button" id="add_shipper_button" for="add_shipper_button_check">ADD DELIVERY MAN</label>
+                </div>
             </section> 
             <br><br><br><hr><br>
             <section class="blood_info__details" id="staff_info__details">
                 <table class="details_table" id="staff_table">
                     <thead>
                         <tr>
-                            <th>N.o</th>
+                            <th class="mobile_hide">N.o</th>
                             <th>Full name</th> 
                             <th>Address</th>
                             <th>Salary</th>
@@ -179,28 +183,28 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
                             <td>May, 10th, 2021</td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
                             <td>May, 10th, 2021</td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
                             <td>May, 10th, 2021</td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
@@ -209,7 +213,7 @@
                     </tbody>
                     <tfoot>
                         <tr>   
-                            <td id="button_row" colspan="8"><button class="load_more_button">Load more &nbsp;<i id="arrow_down" class="fa-regular fa-angle-down"></i></button></td>
+                            <td id="button_row" colspan="8"><button class="load_more_button">Load more</button></td>
                         </tr>
                     </tfoot>
                 </table>
