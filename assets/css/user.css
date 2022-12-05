@@ -116,13 +116,13 @@ hr {
     margin-top: 30px; 
     margin-bottom: 5px; 
 }
-.submit_button {
+.donation_his__header input {
     background-color: #f1736c;
     border-radius: 4px; 
     border-style: none;
     color: #ffffff; 
-    width: 100px; 
-    height: 35px; 
+   width:0.3px;
+    height: 30px; 
     transition-duration: 0.4s; 
     cursor: pointer; 
 }
@@ -245,7 +245,6 @@ select,input::placeholder{
     margin-top:20px;
     font-weight: bold;
     padding: 0 0 10px;
-
 }
 
 .modal_content .submit_button {
@@ -283,5 +282,7 @@ select,input::placeholder{
     .modal_content-item label {
         align-self: flex-start;
     }
-    
+    .modal_content-item select {
+        width:100%;
+    }
 }
