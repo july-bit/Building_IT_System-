@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css for main -->
-    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="assets/css/hospital.css">
     <!-- css for header and footer -->
     <link rel="stylesheet" href="assets/css/headernfooter.css">
     <!-- css for icons -->
@@ -185,7 +185,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="data_rows">
                             <td>1</td>
                             <td>A</td> 
                             <td>10</td>
@@ -195,7 +195,7 @@
                             <td>May, 10th 2021</td>
                             <td>Active</td>
                         </tr>
-                        <tr>
+                        <tr class="data_rows">
                             <td>1</td>
                             <td>A</td> 
                             <td>10</td>
@@ -205,7 +205,7 @@
                             <td>May, 10th 2021</td>
                             <td>Active</td>
                         </tr>
-                        <tr>
+                        <tr class="data_rows">
                             <td>1</td>
                             <td>A</td> 
                             <td>10</td>
@@ -215,7 +215,37 @@
                             <td>May, 10th 2021</td>
                             <td>Active</td>
                         </tr>
-                        <tr>
+                        <tr class="data_rows">
+                            <td>1</td>
+                            <td>A</td> 
+                            <td>10</td>
+                            <td>01.04.06</td>
+                            <td>12345678</td> 
+                            <td>Nguyen Van A</td>
+                            <td>May, 10th 2021</td>
+                            <td>Active</td>
+                        </tr>   
+                        <tr class="data_rows">
+                            <td>1</td>
+                            <td>A</td> 
+                            <td>10</td>
+                            <td>01.04.06</td>
+                            <td>12345678</td> 
+                            <td>Nguyen Van A</td>
+                            <td>May, 10th 2021</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr class="data_rows">
+                            <td>1</td>
+                            <td>A</td> 
+                            <td>10</td>
+                            <td>01.04.06</td>
+                            <td>12345678</td> 
+                            <td>Nguyen Van A</td>
+                            <td>May, 10th 2021</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr class="data_rows">
                             <td>1</td>
                             <td>A</td> 
                             <td>10</td>
@@ -241,5 +271,8 @@
             require ('footer.html');
         ?>
     </div>
+
+    <!-- link js -->
+    <script src="./assets/js/load_more.js"></script>
 </body>
 </html>

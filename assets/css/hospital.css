@@ -163,20 +163,56 @@ main{
     background-color: rgb(236, 235, 235);
 }
 
-.open_form_button{
-    background-color: #f2665e;
-    color: white;
+.open_form_button, .load_more_button, .submit_button{
+    /* background-color: #f2665e;
     font-weight: bold;
     border-radius: 8px;
+    width: 45%; for previoud red color*/
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    /* width: 200px;  */
     width: 45%;
-    /* margin-left: 1rem; */
+    /* font-size: 16px; */
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    /* margin: 20px;
+    height: 55px; */
+    text-align:center;
+    border: 0;
+    background-size: 300% 100%;
+
+    border-radius: 8px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.open_form_button:hover{
-    background-color:#d55851;
+.open_form_button:hover, .load_more_button:hover, .submit_button:hover{
+    /* background-color:#d55851; for previous red color */
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
+/* 
 .open_form_button:active{
     background-color:#c5524c;
+} */
+
+.open_form_button:focus, .load_more_button:focus, .submit_button:focus {
+    outline: none;
+}
+
+.submit_button{
+    border: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    margin: auto;
 }
 
 .details_table {
@@ -211,26 +247,11 @@ main{
 }
 
 .load_more_button{
-    border: 0;
     text-align: center;
     width: 30%;
     padding: 10px;
     border-radius: 10px;
-    background-color: #f2665e;
-    color: white;
-    font-weight: bold;
     font-size: 13px;
-}
-
-#arrow_down{
-    color: white;
-}
-
-.load_more_button:hover{
-    background-color: #d55851;
-}
-.load_more_button:active{
-    background-color:#c5524c;
 }
 
 #request_button_check:checked ~ .overlay{
@@ -285,25 +306,6 @@ main{
     border-radius: 3px;
     border: none;
     height: 1.8rem;
-}
-
-.submit_button{
-    border: 0;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    background-color: #f2665e;
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
-    margin: auto;
-}
-
-.submit_button:hover{
-    background-color:#d55851;
-}
-.submit_button:active{
-    background-color:#c5524c;
 }
 
 #request_form{

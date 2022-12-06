@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css for main -->
-    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="./assets/css/hospital.css">
     <!-- css for header and footer -->
     <link rel="stylesheet" href="assets/css/headernfooter.css">
     <!-- css for icons -->
@@ -182,28 +182,49 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="data_rows">
                             <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
                             <td>May, 10th, 2021</td>
                         </tr>
-                        <tr>
+                        <tr class="data_rows">
                             <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
                             <td>May, 10th, 2021</td>
                         </tr>
-                        <tr>
+                        <tr class="data_rows">
                             <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
                             <td>20.000</td>
                             <td>May, 10th, 2021</td>
                         </tr>
-                        <tr>
+                        <tr class="data_rows">
+                            <td class="mobile_hide">1</td>
+                            <td>Nguyen Van A</td> 
+                            <td>10, Hai Ba Tung, HCM</td>
+                            <td>20.000</td>
+                            <td>May, 10th, 2021</td>
+                        </tr>
+                        <tr class="data_rows">
+                            <td class="mobile_hide">1</td>
+                            <td>Nguyen Van A</td> 
+                            <td>10, Hai Ba Tung, HCM</td>
+                            <td>20.000</td>
+                            <td>May, 10th, 2021</td>
+                        </tr>
+                        <tr class="data_rows">
+                            <td class="mobile_hide">1</td>
+                            <td>Nguyen Van A</td> 
+                            <td>10, Hai Ba Tung, HCM</td>
+                            <td>20.000</td>
+                            <td>May, 10th, 2021</td>
+                        </tr>
+                        <tr class="data_rows">
                             <td class="mobile_hide">1</td>
                             <td>Nguyen Van A</td> 
                             <td>10, Hai Ba Tung, HCM</td>
@@ -213,7 +234,7 @@
                     </tbody>
                     <tfoot>
                         <tr>   
-                            <td id="button_row" colspan="8"><button class="load_more_button">Load more</button></td>
+                            <td id="button_row" colspan="8"><button class="load_more_button test_button">Load more</button></td>
                         </tr>
                     </tfoot>
                 </table>
@@ -221,10 +242,14 @@
         </div>
     </main>
 
+    <label for="" class="open_form_button">alo</label>
+
     <div id="footer">
         <?php 
             require ('footer.html');
         ?>
     </div>
+    <!-- link js -->
+    <script src="./assets/js/load_more.js"></script>
 </body>
 </html>
