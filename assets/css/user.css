@@ -179,7 +179,7 @@ form {
 .modal_content label,input,select { 
     color: #39395b; 
     font-weight: bold; 
-    /* min-width:40%;  */
+    min-width:40%; 
     margin-top:5%; 
 }
 .donation_his__table-button input {
