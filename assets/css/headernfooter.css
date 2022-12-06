@@ -63,6 +63,7 @@ nav {
     transform: translateX(200%); 
     opacity: 0;
     transition: all 0.3s;
+    z-index: 100;
 }
 
 .nav__toggle{
@@ -160,10 +161,12 @@ nav {
 }
 
 .footer{
+    width: 100%;
+    overflow: hidden;
     text-align: center;
     font-size: 1.3rem;
     background-color: #f2665e;
-    padding: 14px;
+    padding: 14px 0px;
     color: #fff;
 }
 
@@ -178,10 +181,6 @@ nav {
     to{
         opacity: 1;
     }
-}
-
-#nav_mobile{
-    z-index: 10000;
 }
 
 @media (min-width: 1023px){
@@ -201,7 +200,8 @@ nav {
         padding: 10px 25px;
     }
 
-    .avatar_field:hover > ul, .settings:hover{
+    .avatar_field:hover > ul, 
+    .settings:hover{
         display: flex;
         visibility: visible;
         opacity: 1;
