@@ -242,8 +242,6 @@
         </div>
     </main>
 
-    <label for="" class="open_form_button">alo</label>
-
     <div id="footer">
         <?php 
             require ('footer.html');
