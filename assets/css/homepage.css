@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(/assets/img/homepage_bg.png);
+    background-image: url(../img/homepage_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  

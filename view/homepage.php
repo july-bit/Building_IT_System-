@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/homepage.css">
-    <link rel="stylesheet" href="/assets/css/buttons.css">
+    <link rel="stylesheet" href="../assets/css/headernfooter.css">
+    <link rel="stylesheet" href="../assets/css/homepage.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
-<header>
+<div id="header">
     <?php include 'header.php';?>
-</header>
+</div >
 <body>
     <div class="main">
         <div class="content">

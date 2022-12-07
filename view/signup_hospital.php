@@ -16,7 +16,7 @@
         <div class="content">
             <div class="content-form">
                 <div class="content-form_img--citizen">
-                    <img src="/assets/img/hospital_bg.png" alt="">
+                    <img src="../assets/img/hospital_bg.png" alt="">
                     <div class="content-form_img--text">
                         <div class="form_text--main">
                             <h2>Welcome hospital officers to the Blood mana community!</h2>

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/signup.css">
-    <link rel="stylesheet" href="/assets/css/buttons.css">
+    <link rel="stylesheet" href="../assets/css/signup.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <div class="content">
             <div class="content-form">
                 <div class="content-form_img--citizen">
-                    <img src="/assets/img/donator_bg.png" alt="">
+                    <img src="../assets/img/donator_bg.png" alt="">
                     <div class="content-form_img--text">
                         <div class="form_text--main">
                             <h2>Welcome donators to the Blood mana community!</h2>
