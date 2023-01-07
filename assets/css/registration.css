@@ -1,0 +1,193 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.registration {
+  margin: 0 15%;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: rgb(255 121 121 / 20%) 0px 6px 18px 0px;
+  /* height: calc(100% - 64px); */
+  min-height: 70vh;
+}
+
+.login-form {
+  display: none;
+}
+
+/* Registration--left section */
+.registration.donor .registration--left {
+  background-image: url(../img/donor_reg_bg.png);
+  box-shadow: rgb(255 121 121 / 20%) 0px 6px 18px 0px;
+}
+
+.registration.hr .registration--left,
+.registration.db-off .registration--left {
+  background-image: url(../img/hospital_reg_bg.png);
+}
+
+.registration.delivery-off .registration--left {
+  background-image: url(../img/shipper_reg_bg.png);
+}
+
+.registration.donor {
+  --extra-link-color: rgb(246, 53, 53);
+}
+
+.registration.hr,
+.registration.db-off {
+  --extra-link-color: rgb(24 126 219);
+}
+
+.registration.delivery-off {
+  --extra-link-color: rgb(49 183 65);
+}
+
+.registration--left {
+  border-radius: 6px 0 0 6px;
+  width: 40%;
+  color: white;
+  text-align: center;
+  padding: 0 40px;
+  position: relative;
+}
+
+.registration--left__content {
+  position: absolute;
+  top: 50%;
+  width: calc(100% - 80px);
+  transform: translateY(-50%);
+}
+
+.registration--left hr {
+  width: 25%;
+  border: none;
+  height: 3px;
+  background-color: white;
+}
+
+.registration--left__heading {
+  margin-top: 30%;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: white;
+}
+
+.registration--left__desc {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.registration--left p:last-of-type {
+  margin-top: 50%;
+  font-size: 1.4rem;
+}
+
+/* Registration--left section */
+.registration--right {
+  width: 60%;
+}
+
+.registration--right {
+  padding: 28px 10%;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-field__label {
+  width: 25%;
+  margin-bottom: 0;
+}
+
+.form-field__input {
+  width: 70%;
+}
+
+/* RESEPONSIVE */
+/* Mobile */
+@media only screen and (max-width: 1024px) {
+  .registration {
+    position: unset;
+    transform: unset;
+    min-height: unset;
+    margin: 0;
+  }
+}
+
+/* Ipad */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  main {
+    margin: 75px 6%;
+  }
+
+  .registration--left {
+    padding: 0 20px;
+  }
+
+  .registration--left__content {
+    width: calc(100% - 40px);
+  }
+
+  .registration--left__heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .registration--right {
+    padding: 28px 6%;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 739px) {
+  main {
+    margin: 50px 4%;
+  }
+
+  .registration {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 3px 0px;
+    border: 1px solid #efefef;
+  }
+
+  .registration--left {
+    display: none;
+  }
+
+  .registration--right {
+    width: 100%;
+    padding: 16px 7%;
+  }
+
+  .form-name {
+    margin: 4px 0 16px;
+  }
+
+  .form-field__label,
+  .form-field__input {
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  .form-field.check-box-field {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .form-field {
+    margin-bottom: 12px;
+  }
+
+  .form-field.check-box-field {
+    text-align: initial;
+  }
+}

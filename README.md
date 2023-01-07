@@ -5,3 +5,9 @@ A. Members:
 2. Nguyen Minh (S3932112)
 3. Luong Thao My (S3922086)
 4. Tran Gia Minh Thong (S3924667)
+
+B. References:
+*Title: Google Map API
+*Author: Google
+*Date: 20th November 2022
+*Availability: https://developers.google.com/maps

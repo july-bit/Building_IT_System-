@@ -1,0 +1,385 @@
+body {
+    background-color:  #f7f7f7;
+}
+
+main {
+    /* margin: 100px 12% 40px; */
+}
+
+.page-header-container {
+
+}
+
+.page-header-item {
+    min-width: 100px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #a5a5a5;
+    border: 1px solid #dedede;
+    margin-right: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 2px 0px;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.page-header-item:hover {
+    cursor: pointer;
+}
+
+.page-header-item.active {
+    background: var(--pink-color);
+    color: white;
+    font-weight: 600;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section:last-child {
+    margin-bottom: 100px;
+}
+
+hr {
+    height: 1px;
+    background-color: #c2c2c2;
+    border: none;
+}
+
+.user-profile {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+
+/* User profile left section */
+.user-profile--left {
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    width: 33%;
+    text-align: center;
+    padding: 28px 36px;
+    border: 1px solid #efefef;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+}
+
+.user-profile__name {
+    font-size: 1.6rem;
+}
+
+
+.user-profile__avt {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid rgb(187, 186, 186);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.user-profile--left hr {
+    margin: 20px 0;
+}
+
+.user-profile__info {
+    font-size: 1.4rem;
+    color: #1d1d24;
+    /* text-align: initial; */
+}
+
+
+/* User profile right section */
+.health-condition-form {
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    width: 62%;
+    padding: 28px 36px;
+    border: 1px solid #efefef;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+}
+
+.user-profile--left .edit-ic,
+.health-condition-form .edit-ic,
+.health-condition-form .close-ic {
+    position: absolute;
+    top: 28px;
+    right: 36px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.edit-ic:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.health-condition-form .close-ic {
+    font-size: 2rem;
+}
+
+
+
+
+.health-condition-form--left {
+    width: 45%;
+}
+
+.health-condition-form--right {
+    width: 45%;
+}
+
+.health-condition-form .form-name {
+    /* color: red; */
+    width: 100%;
+    text-align: initial;
+    line-height: 2rem;
+}
+
+.health-condition-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.health-condition-content--left {
+}
+
+.health-condition-content--right {
+
+}
+
+.health-condition-form .form-field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user-profile--right .form-field__label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    min-width: 40%;
+    margin-bottom: 0;
+    text-align: initial;
+}
+
+.user-profile--right .form-field__input {
+    width: 40%;
+    background-color: transparent;
+    border: none;
+    margin-left: 4px;
+}
+
+/* Donation history section */
+.donation-history {
+
+}
+
+.donation-history hr {
+    margin: 12px 0 20px;
+}
+
+.donation-hisotry__table {
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+    font-size: 1.3rem;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.donation-hisotry__table tr {
+    border-bottom: 1px solid #dce4fa;
+}
+
+.donation-hisotry__table tr th,
+.donation-hisotry__table tr td {
+    text-align: initial;
+    /* font-weight: 500; */
+    padding: 12px 16px;
+}
+
+/* .donation-hisotry__table tr th {
+    font-weight: 600;
+} */
+
+.donation-hisotry__table tr td img {
+    width:40px;
+    height: 40px; 
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Book form */
+.book-form {
+    position: fixed;
+    width: 33%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000000;
+    background-color: white;
+}
+
+.book-form .form-field {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.book-form .form-field__label {
+    width: 20%;
+}
+
+.book-form .form-field__input {
+    width: 70%;
+}
+
+.book-form input[type="submit"] {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.book-form .form_field__message {
+    width: 100%;
+}
+
+.book-form .close-ic {
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    font-size: 1.8rem;
+}
+
+.book-form .close-ic:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* RESPONSIVE */
+/* Mobile */
+@media only screen and (max-width: 1023px) {
+    .health-condition-content--left,
+    .health-condition-content--right {
+        width: 100%;
+    }
+
+    .health-condition-form .form-field {
+        justify-content: space-between;
+    }
+}
+
+/* Ipad */ 
+@media only screen and (min-width: 740px)and (max-width: 1023px) {
+    main {
+        margin: 60px 6% 40px;
+    }
+
+    .user-profile--left {
+        padding: 16px;
+        width: 40%;
+    }
+
+    .health-condition-form .edit-ic, .health-condition-form .close-ic {
+        top: 16px;
+        /* right: 20px; */
+    }
+
+    .health-condition-form {
+        padding: 16px 36px;
+        width: 55%;
+    }
+
+  
+
+    .user-profile--right .form-field__input {
+        padding: 6px 8px;
+        width: 55%;
+    }
+}
+
+/* Iphone */
+@media only screen and (max-width: 739px) {
+    main {
+        margin: 76px 4% 40px !important;
+    }
+
+    section {
+        margin-top: 40px;
+    }
+    
+    .user-profile--left {
+        width: 100%;
+        margin-bottom: 28px;
+        padding: 16px 20px;
+    }
+
+    .user-profile--right {
+        padding: 16px 20px;
+    }
+
+    .health-condition-form {
+        width: 100%;
+    }
+
+    .health-condition-form .edit-ic, .health-condition-form .close-ic {
+        top: 16px;
+        right: 20px;
+    }
+
+    .user-profile--right .form-field__input {
+        width: 50%;
+    }
+
+    .donation-hisotry__table tr th, .donation-hisotry__table tr td {
+        padding: 10px;
+    }
+
+    .book-form {
+        width: 88%;
+    }
+    .book-form .form-field__input {
+        width: 100%;
+    }
+}
+
+
+/* RESPONSIVE */
+@media (min-width: 1024px) {
+
+}
+
+@media (max-width: 1023px) {
+    .donation-hisotry__table {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+
+    main {
+        margin: 100px 4% 80px!important;
+    }
+
+   
+}
+
+@media only screen and (max-width: 739px) {
+    .page-header-item {
+        padding: 6px 10px;
+    }
+
+    .toggle-form {
+        padding: 16px 26px !important;
+    }
+}
